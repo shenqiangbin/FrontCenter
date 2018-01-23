@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		body,html,div{margin:0;padding: 0;}
+		/*
+		.container{							
+			position: absolute;	
+			width: 100%;
+			height: 500px;			
+			
+			background-color: red;			
+		}
+		.content{						
+			width:400px;
+			height: 300px;
+			margin: 0 auto;
+			margin-top: 60px;
+
+			border: 1px solid blue;
+			background-color: blue;
+		}*/
+
+
+		.container{									
+			width: 100%;
+			height: 500px;
+			padding-top: 60px;			
+			
+			background-color: red;			
+		}
+		.content{						
+			width:400px;
+			height: 300px;
+			margin: 0 auto;
+
+			border: 1px solid blue;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<p>一个div包含另一个div，且里面的div在他的中间</p>
+	<p>居中设置：div 设置 margin:0 auto;即可。</p>
+	<p>间距设置方式1：父元素使用padding-top来实现间距</p>
+	<p>间距设置方式2：父元素使用position定位，子元素使用margin-top设置与父元素的间距</p>
+
+	<div class='container'>
+		<div class="content">
+
+		</div>
+	</div>
+</body>
+</html>
