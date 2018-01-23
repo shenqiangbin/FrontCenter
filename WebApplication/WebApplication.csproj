@@ -118,6 +118,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="lunbo\image\1.jpg" />
+    <Content Include="lunbo\image\2.jpg" />
+    <Content Include="lunbo\image\3.jpg" />
+    <Content Include="lunbo\image\4.jpg" />
+    <Content Include="lunbo\image\5.jpg" />
+    <Content Include="lunbo\image\6.jpg" />
+    <Content Include="lunbo\image\7.jpg" />
+    <Content Include="lunbo\image\8.jpg" />
+    <Content Include="lunbo\image\arrowleft.jpg" />
+    <Content Include="lunbo\image\arrowright.jpg" />
+    <Content Include="lunbo\unslider\demo2.html" />
+    <Content Include="lunbo\unslider\demo1.html" />
+    <Content Include="lunbo\unslider\unslider.min.js" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Web.config" />

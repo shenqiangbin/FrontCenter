@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <style>   
+        .container{border:1px solid red;width:400px;}    
+        .banner {position: relative;overflow: auto;border:1px solid green;}
+        .banner li {list-style: none;}
+        .banner ul li {float: left;}
+    </style>
+
+</head>
+<body>
+
+    <p>
+        箭头的样式设置
+    </p>
+
+    <div class="container">
+        <a href="#" class="unslider-arrow prev">Previous slide</a>
+        <a href="#" class="unslider-arrow next">Next slide</a>
+        <div class="banner">
+            <ul>
+                <li><img src="../image/1.jpg" /></li>
+                <li>
+                    <img src="../image/2.jpg" />
+                </li>
+                <li>
+                    <img src="../image/3.jpg" />
+                </li>
+                <li>
+                    <img src="../image/4.jpg" />
+                </li>
+                <li>
+                    <img src="../image/5.jpg" />
+                </li>
+                <li>
+                    <img src="../image/6.jpg" />
+                </li>
+                <li>
+                    <img src="../image/7.jpg" />
+                </li>
+                <li>
+                    <img src="../image/8.jpg" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="unslider.min.js"></script>
+
+    <script>
+        $(function () {
+            //$('.banner').unslider();
+
+            var unslider = $('.banner').unslider({
+                speed: 200,               //  The speed to animate each slide (in milliseconds)
+                delay: 3000,              //  The delay between slide animations (in milliseconds)
+                complete: function () { },  //  A function that gets called after every slide animation
+                keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                dots: true,               //  Display dot navigation
+                fluid: false              //  Support responsive design. May break non-responsive designs
+            });
+
+            $('.unslider-arrow').click(function () {
+                var fn = this.className.split(' ')[1];
+                //  Either do unslider.data('unslider').next() or .prev() depending on the className
+                unslider.data('unslider')[fn]();
+            });
+
+        });
+    </script>
+
+</body>
+</html>
